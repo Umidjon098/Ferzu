@@ -1,0 +1,80 @@
+ tbody td {
+    font-family:sans-serif;
+    font-size: 14px;
+    color: #808080;
+    transition: all 0.3s ease-in-out;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  thead th {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    background: #353B50;
+  }
+
+  tr:hover{
+    background-color: #f2f2f2;
+    color: #fff;
+  }
+  td:hover{
+    box-shadow: 5px 7px 10px rgba(0, 0, 0, .3);
+    cursor: pointer;
+  }
+
+.search {
+  position: absolute;
+  top: 12px;
+  right: 30px;
+  width: 30%;
+  height: 40px;
+}
+
+.search input::placeholder {
+  color: #fff;
+}
+
+.search input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: #353B50;
+  border: 1px solid rgba(255, 255, 2555, 0.5);
+  border-radius: 4px;
+  padding: 0 10px 0 40px;
+  outline: none;
+  backdrop-filter: blur(10px);
+}
+
+.search .fa-search {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #fff;
+}
+
+@media(max-width: 767px){
+  .table-box{
+    padding: 0;
+    border-radius: 7px;
+    background: #fff;
+  }
+}
+@media(min-width: 768px)and(max-width:1023px){
+  .table-box{
+    overflow: scroll;
+    padding: 0;
+    border-radius: 7px;
+    background: #fff;
+  }
+}
